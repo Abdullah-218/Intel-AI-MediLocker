@@ -17,7 +17,7 @@ Unlike traditional healthcare apps that focus only on basic appointment booking 
 
  ## 🎯 Core Features
 
-### 🟢 Patient Portal
+### 🕵🏻‍♀️ Patient Portal
 
 **🩺 Medical History Management**
 
@@ -52,7 +52,7 @@ Enables remote consultations via secure video calls within the app.
 
 ---
 
-### 🟢 Doctor Portal
+### 👨🏻‍⚕️ Doctor Portal
 
 **🔒 OTP-Verified Patient Medical History Access**
 
@@ -76,7 +76,7 @@ Doctors get a dashboard showing patient analytics: number of patients, common sy
 
 ---
 
-### 🟢 Admin Panel
+### 👨🏻‍💼 Admin Panel
 
 **✅ Doctor Verification (Manual License Check)**
 
