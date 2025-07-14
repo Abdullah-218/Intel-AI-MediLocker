@@ -7,16 +7,16 @@ AI-powered healthcare management platform connecting doctors and patients for sm
 ## 🚀 Project Overview
 
 **Intel AI MediLocker is a next-generation mobile app designed to simplify healthcare management for both patients and doctors. With AI integrations, digital prescriptions, and personalized care modules, MediLocker enhances treatment safety and healthcare accessibility.**
-
+```
 -> 💊 Doctors securely access patient medical history and prescribe safely using AI side-effect prediction.
 
 -> 🧑‍⚕️ Patients book appointments, manage medications, track dosages, and consult doctors via telemedicine.
 
 -> 📄 Digital medical records and prescriptions ensure continuity of care across visits.
-
+```
  ## 🎯 Core Features
 
-###🟢 Patient Portal
+### 🟢 Patient Portal
 
 **🩺 Medical History Management**
 
@@ -51,7 +51,7 @@ Enables remote consultations via secure video calls within the app.
 
 ⸻
 
-###🟢 Doctor Portal
+### 🟢 Doctor Portal
 
 **🔒 OTP-Verified Patient Medical History Access**
 
@@ -75,7 +75,7 @@ Doctors get a dashboard showing patient analytics: number of patients, common sy
 
 ⸻
 
-###🟢 Admin Panel
+### 🟢 Admin Panel
 
 **✅ Doctor Verification (Manual License Check)**
 
