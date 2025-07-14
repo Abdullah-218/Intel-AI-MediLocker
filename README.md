@@ -14,6 +14,7 @@ AI-powered healthcare management platform connecting doctors and patients for sm
 
 -> 📄 Digital medical records and prescriptions ensure continuity of care across visits.
 ```
+
  ## 🎯 Core Features
 
 ### 🟢 Patient Portal
@@ -49,7 +50,7 @@ Patients can upload diagnostic reports (PDFs, images). Doctors and patients can 
 
 Enables remote consultations via secure video calls within the app.
 
-⸻
+---
 
 ### 🟢 Doctor Portal
 
@@ -73,7 +74,7 @@ Doctors can manage both online-scheduled and offline walk-in patients from a uni
 
 Doctors get a dashboard showing patient analytics: number of patients, common symptoms, and upcoming appointments.
 
-⸻
+---
 
 ### 🟢 Admin Panel
 
@@ -85,7 +86,7 @@ Admins verify doctors manually via license checks on external government portals
 
 Only verified doctors are granted access to the app’s medical functionalities, ensuring system integrity and trust.
 
-⸻
+---
 
 
  
