@@ -98,15 +98,13 @@ Only verified doctors are granted access to the app’s medical functionalities,
 
 -> Supabase Auth & Storage
 
--> Supabase Edge Functions
+-> Medicine Side-Effect Prediction - ML model for Prediction
 
--> Medicine Side-Effect Prediction
+-> AI Diet Planning - RAD model AI integration
 
--> AI Diet Planning
+-> Symptom-to-Doctor Recommendation - Gemini AI API integration 
 
--> Symptom-to-Doctor Recommendation
-
--> Mental Health Chatbot
+-> Mental Health Chatbot - AI ChatBot
 
 -> PDF Generation (Digital Prescriptions)
 
