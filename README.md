@@ -88,5 +88,17 @@ Only verified doctors are granted access to the app’s medical functionalities,
 
 ---
 
+##🛠️ Built With
+	•	📱 Flutter (Frontend - Cross Platform Mobile)
+	•	💾 Supabase (Backend Database)
+	•	☁️ Supabase Auth & Storage
+	•	🔐 Supabase Edge Functions
+	•	🤖 Gemini AI (Google Generative AI) for:
+	•	Medicine Side-Effect Prediction
+	•	AI Diet Planning
+	•	Symptom-to-Doctor Recommendation
+	•	Mental Health Chatbot
+	•	📄 PDF Generation (Digital Prescriptions)
+	•	🎥 WebRTC (Telemedicine Video Calls)
 
  
