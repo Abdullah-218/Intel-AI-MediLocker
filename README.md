@@ -111,7 +111,36 @@ Only verified doctors are granted access to the app’s medical functionalities,
 -> WebRTC (Telemedicine Video Calls)
 
 ```
+---
 
+## 🏆 Achievements
 
+-> 🏅 Selected as Pre-Finalist in Unisys Innovation Program 2025.
+
+-> 🏆 Built from original idea with focus on real-world healthcare challenges.
+
+-> 🧑‍💻 Led as Backend & AI Lead + Team Leader for full-stack development.
+
+⸻
+
+## 📈 Future Scope
+
+	•	🔗 API-based Doctor License Auto-Verification.
+	•	🤖 Full AI-Driven Diet System using Food Nutrient Databases.
+	•	📊 Real-time Health Analytics Dashboard.
+	•	🩺 Smart Wearable Integration for Health Monitoring.
+
+##📥 Installation & Setup
+	1.	Clone the repository.
+	2.	Set up Supabase project and configure supabase_config.dart.
+	3.	Run Flutter project:
+ ```
+flutter pub get
+flutter run
+```
+
+## 📣 Contribution
+
+Pull requests are welcome! For major changes, please open an issue first to discuss proposed modifications.
 
  
