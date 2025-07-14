@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 
 class Chatbot extends StatefulWidget {
-  const Chatbot({Key? key}) : super(key: key);
+  const Chatbot({super.key});
   @override
   _ChatbotState createState() => _ChatbotState();
 }
@@ -211,10 +211,10 @@ class ChatMessage extends StatelessWidget {
   final String text;
   final bool isUser;
   const ChatMessage({
-    Key? key,
+    super.key,
     required this.text,
     required this.isUser,
-  }) : super(key: key);
+  });
   @override
   Widget build(BuildContext context) {
     return Container(

@@ -308,7 +308,7 @@ class GlassmorphicContainer extends StatelessWidget {
   final BoxBorder? border;
 
   const GlassmorphicContainer({
-    Key? key,
+    super.key,
     required this.child,
     required this.width,
     required this.height,
@@ -319,7 +319,7 @@ class GlassmorphicContainer extends StatelessWidget {
     this.borderWidth = 1.5,
     this.gradient,
     this.border,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -354,6 +354,8 @@ class GlassmorphicContainer extends StatelessWidget {
 
 // Screens
 class PrescriptionsScreen extends StatefulWidget {
+  const PrescriptionsScreen({super.key});
+
   @override
   _PrescriptionsScreenState createState() => _PrescriptionsScreenState();
 }
@@ -1062,7 +1064,7 @@ class _PrescriptionsScreenState extends State<PrescriptionsScreen> with SingleTi
                                 Text(
                                   isActive
                                       ? '$daysRemaining days remaining'
-                                      : 'Completed ${daysBetween} days',
+                                      : 'Completed $daysBetween days',
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 13,

@@ -380,8 +380,8 @@ class _AdminDashboardState extends State<AdminDashboard> {
       floatingActionButton: FloatingActionButton(
         onPressed: _fetchUnverifiedDoctors,
         backgroundColor: Colors.indigo[700],
-        child: const Icon(Icons.refresh),
         tooltip: 'Refresh',
+        child: const Icon(Icons.refresh),
       ),
     );
   }

@@ -16,7 +16,7 @@ void main() {
 }
 
 class MedicalApp extends StatelessWidget {
-  const MedicalApp({Key? key}) : super(key: key);
+  const MedicalApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class MedicalApp extends StatelessWidget {
         fontFamily: 'Poppins',
         brightness: Brightness.light,
         useMaterial3: true,
-        cardTheme: CardTheme(
+        cardTheme: CardThemeData(
           elevation: 0,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16),
@@ -75,7 +75,7 @@ class MedicalRecord {
 
 // Medical History Screen
 class MedicalHistoryScreen extends StatefulWidget {
-  const MedicalHistoryScreen({Key? key}) : super(key: key);
+  const MedicalHistoryScreen({super.key});
 
   @override
   State<MedicalHistoryScreen> createState() => _MedicalHistoryScreenState();
@@ -353,12 +353,12 @@ class MedicalHistoryCard extends StatefulWidget {
   final int index;
 
   const MedicalHistoryCard({
-    Key? key,
+    super.key,
     required this.record,
     required this.onDownload,
     this.onView,
     required this.index,
-  }) : super(key: key);
+  });
 
   @override
   State<MedicalHistoryCard> createState() => _MedicalHistoryCardState();
@@ -742,13 +742,12 @@ class _GlassmorphicButton extends StatelessWidget {
   final bool isDisabled;
 
   const _GlassmorphicButton({
-    Key? key,
     required this.onPressed,
     required this.icon,
     required this.label,
     required this.gradientColors,
     this.isDisabled = false,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -808,11 +807,11 @@ class MedicalHistoryDetailScreen extends StatefulWidget {
   final VoidCallback onShare;
 
   const MedicalHistoryDetailScreen({
-    Key? key,
+    super.key,
     required this.record,
     required this.onDownload,
     required this.onShare,
-  }) : super(key: key);
+  });
 
   @override
   State<MedicalHistoryDetailScreen> createState() => _MedicalHistoryDetailScreenState();

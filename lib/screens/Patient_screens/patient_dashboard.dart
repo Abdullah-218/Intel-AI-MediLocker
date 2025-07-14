@@ -13,7 +13,7 @@ import 'package:intel/screens/Patient_screens/diet_plan_screen.dart';
 
 class PatientDashboard extends StatefulWidget {
   final String patientId; // Add patient ID parameter
-  const PatientDashboard({Key? key, required this.patientId}) : super(key: key);
+  const PatientDashboard({super.key, required this.patientId});
 
   @override
   State<PatientDashboard> createState() => _PatientDashboardState();

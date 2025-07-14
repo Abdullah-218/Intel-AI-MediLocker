@@ -4,7 +4,7 @@ import 'package:intel/screens/Landing_screens/doctor_create_acc_screen.dart';
 import 'package:intel/services/supabase_service.dart';
 
 class DoctorLoginScreen extends StatefulWidget {
-  const DoctorLoginScreen({Key? key}) : super(key: key);
+  const DoctorLoginScreen({super.key});
 
   @override
   State<DoctorLoginScreen> createState() => _DoctorLoginScreenState();

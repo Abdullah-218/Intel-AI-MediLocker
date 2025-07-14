@@ -20,7 +20,7 @@ void main() {
 }
 
 class PatientApp extends StatelessWidget {
-  const PatientApp({Key? key}) : super(key: key);
+  const PatientApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -128,7 +128,7 @@ class PatientApp extends StatelessWidget {
             ),
           ),
         ),
-        cardTheme: CardTheme(
+        cardTheme: CardThemeData(
           elevation: 3,
           shadowColor: const Color(0xFF475569).withOpacity(0.1),
           shape: RoundedRectangleBorder(
@@ -138,8 +138,8 @@ class PatientApp extends StatelessWidget {
           color: Colors.white,
         ),
         checkboxTheme: CheckboxThemeData(
-          fillColor: MaterialStateProperty.resolveWith<Color>((states) {
-            if (states.contains(MaterialState.selected)) {
+          fillColor: WidgetStateProperty.resolveWith<Color>((states) {
+            if (states.contains(WidgetState.selected)) {
               return const Color(0xFF2563EB);
             }
             return Colors.white;
@@ -150,8 +150,8 @@ class PatientApp extends StatelessWidget {
           side: const BorderSide(color: Color(0xFFCBD5E1), width: 1.5),
         ),
         radioTheme: RadioThemeData(
-          fillColor: MaterialStateProperty.resolveWith<Color>((states) {
-            if (states.contains(MaterialState.selected)) {
+          fillColor: WidgetStateProperty.resolveWith<Color>((states) {
+            if (states.contains(WidgetState.selected)) {
               return const Color(0xFF2563EB);
             }
             return const Color(0xFF94A3B8);
@@ -168,7 +168,7 @@ class PatientApp extends StatelessWidget {
 }
 
 class PatientRegistrationScreen extends StatefulWidget {
-  const PatientRegistrationScreen({Key? key}) : super(key: key);
+  const PatientRegistrationScreen({super.key});
 
   @override
   State<PatientRegistrationScreen> createState() =>
@@ -306,7 +306,6 @@ class _PatientRegistrationScreenState extends State<PatientRegistrationScreen>
               onPrimary: Colors.white,
               onSurface: Color(0xFF1E293B),
             ),
-            dialogBackgroundColor: Colors.white,
             textButtonTheme: TextButtonThemeData(
               style: TextButton.styleFrom(
                 foregroundColor: const Color(0xFF2563EB),
@@ -315,7 +314,7 @@ class _PatientRegistrationScreenState extends State<PatientRegistrationScreen>
                   fontSize: 14,
                 ),
               ),
-            ),
+            ), dialogTheme: DialogThemeData(backgroundColor: Colors.white),
           ),
           child: child!,
         );
@@ -1007,7 +1006,9 @@ class _PatientRegistrationScreenState extends State<PatientRegistrationScreen>
     if (password.contains(RegExp(r'[A-Z]'))) strength += 0.25;
     if (password.contains(RegExp(r'[a-z]'))) strength += 0.25;
     if (password.contains(RegExp(r'[0-9]')) ||
-        password.contains(RegExp(r'[!@#$%^&*(),.?":{}|<>]'))) strength += 0.25;
+        password.contains(RegExp(r'[!@#$%^&*(),.?":{}|<>]'))) {
+      strength += 0.25;
+    }
 
     String strengthText = 'Weak';
     Color strengthColor = const Color(0xFFEF4444);
@@ -1384,7 +1385,7 @@ class _PatientRegistrationScreenState extends State<PatientRegistrationScreen>
 }
 
 class RegistrationSuccessScreen extends StatelessWidget {
-  const RegistrationSuccessScreen({Key? key}) : super(key: key);
+  const RegistrationSuccessScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -1451,12 +1452,12 @@ class RegistrationSuccessScreen extends StatelessWidget {
                     (route) => false,
                   );
                 },
-                child: const Text('Return to Home'),
                 style: OutlinedButton.styleFrom(
                   padding:
                       const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
                   minimumSize: const Size(double.infinity, 0),
                 ),
+                child: const Text('Return to Home'),
               ),
             ],
           ),

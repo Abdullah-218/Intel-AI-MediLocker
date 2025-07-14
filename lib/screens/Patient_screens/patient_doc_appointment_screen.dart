@@ -13,7 +13,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -48,7 +48,7 @@ class MyApp extends StatelessWidget {
             padding: const EdgeInsets.symmetric(vertical: 16),
           ),
         ),
-        cardTheme: CardTheme(
+        cardTheme: CardThemeData(
           elevation: 5,
           shadowColor: Colors.black12,
           shape: RoundedRectangleBorder(
@@ -62,7 +62,7 @@ class MyApp extends StatelessWidget {
 }
 
 class DoctorAppointmentScreen extends StatefulWidget {
-  const DoctorAppointmentScreen({Key? key}) : super(key: key);
+  const DoctorAppointmentScreen({super.key});
 
   @override
   State<DoctorAppointmentScreen> createState() => _DoctorAppointmentScreenState();

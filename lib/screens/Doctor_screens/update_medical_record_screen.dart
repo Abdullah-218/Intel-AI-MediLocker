@@ -55,11 +55,11 @@ class UpdateMedicalRecordsScreen extends StatefulWidget {
   final String patientId;
 
   const UpdateMedicalRecordsScreen({
-    Key? key,
+    super.key,
     required this.patientName,
     required this.patientAvatar,
     required this.patientId,
-  }) : super(key: key);
+  });
 
   @override
   _UpdateMedicalRecordsScreenState createState() => _UpdateMedicalRecordsScreenState();
@@ -80,7 +80,7 @@ class _UpdateMedicalRecordsScreenState extends State<UpdateMedicalRecordsScreen>
   late DateTime _startDate;
   late DateTime _endDate;
   late MedicineType _selectedType;
-  List<Prescription> _prescriptions = [];
+  final List<Prescription> _prescriptions = [];
 
   // Animation Controller
   late AnimationController _animationController;
@@ -177,8 +177,7 @@ class _UpdateMedicalRecordsScreenState extends State<UpdateMedicalRecordsScreen>
         onPrimary: Colors.white,
         surface: const Color(0xFF303030),
         onSurface: Colors.white,
-      ),
-      dialogBackgroundColor: const Color(0xFF202020),
+      ), dialogTheme: DialogThemeData(backgroundColor: const Color(0xFF202020)),
     );
   }
 

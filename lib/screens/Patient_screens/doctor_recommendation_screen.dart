@@ -6,7 +6,7 @@ import 'package:intel/screens/Patient_screens/patient_doc_appointment_screen.dar
 class DoctorRecommendationScreen extends StatefulWidget {
   final Map<String, dynamic> patientRecord;
 
-  const DoctorRecommendationScreen({Key? key, required this.patientRecord}) : super(key: key);
+  const DoctorRecommendationScreen({super.key, required this.patientRecord});
 
   @override
   _DoctorRecommendationScreenState createState() => _DoctorRecommendationScreenState();

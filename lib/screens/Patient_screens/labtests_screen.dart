@@ -4,7 +4,7 @@ import 'package:intl/intl.dart';
 import 'package:flutter/services.dart';
 
 class LabTestsScreen extends StatefulWidget {
-  const LabTestsScreen({Key? key}) : super(key: key);
+  const LabTestsScreen({super.key});
 
   @override
   _LabTestsScreenState createState() => _LabTestsScreenState();
@@ -120,7 +120,7 @@ class _LabTestsScreenState extends State<LabTestsScreen> with SingleTickerProvid
           ),
           toolbarHeight: isSmallScreen ? 48 : 56,
         ),
-        tabBarTheme: TabBarTheme(
+        tabBarTheme: TabBarThemeData(
           labelColor: const Color(0xFF2D6CDF),
           unselectedLabelColor: Colors.grey.shade700,
           indicatorSize: TabBarIndicatorSize.label,
@@ -791,8 +791,8 @@ class _LabTestsScreenState extends State<LabTestsScreen> with SingleTickerProvid
             ],
             rows: test.results.map((result) {
               return DataRow(
-                color: MaterialStateProperty.resolveWith<Color?>(
-                      (Set<MaterialState> states) {
+                color: WidgetStateProperty.resolveWith<Color?>(
+                      (Set<WidgetState> states) {
                     if (result.flag != 'normal') {
                       return result.flag == 'high'
                           ? Colors.red.withOpacity(0.05)

@@ -11,7 +11,7 @@ void main() {
 }
 
 class DoctorApp extends StatelessWidget {
-  const DoctorApp({Key? key}) : super(key: key);
+  const DoctorApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -67,7 +67,7 @@ class DoctorApp extends StatelessWidget {
 
 // Welcome Screen - First page
 class RegistrationWelcomeScreen extends StatelessWidget {
-  const RegistrationWelcomeScreen({Key? key}) : super(key: key);
+  const RegistrationWelcomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -185,7 +185,7 @@ class RegistrationWelcomeScreen extends StatelessWidget {
 
 // Page 1: Personal Information Screen
 class PersonalInfoScreen extends StatefulWidget {
-  const PersonalInfoScreen({Key? key}) : super(key: key);
+  const PersonalInfoScreen({super.key});
 
   @override
   State<PersonalInfoScreen> createState() => _PersonalInfoScreenState();
@@ -517,7 +517,7 @@ class _PersonalInfoScreenState extends State<PersonalInfoScreen> {
 class ProfessionalInfoScreen extends StatefulWidget {
   final RegistrationData registrationData;
 
-  const ProfessionalInfoScreen({Key? key, required this.registrationData}) : super(key: key);
+  const ProfessionalInfoScreen({super.key, required this.registrationData});
 
   @override
   State<ProfessionalInfoScreen> createState() => _ProfessionalInfoScreenState();
@@ -735,9 +735,9 @@ class AddressScreen extends StatefulWidget {
   final RegistrationData registrationData;
 
   const AddressScreen({
-    Key? key,
+    super.key,
     required this.registrationData,
-  }) : super(key: key);
+  });
 
   @override
   State<AddressScreen> createState() => _AddressScreenState();
@@ -1326,7 +1326,7 @@ class _PasswordScreenState extends State<PasswordScreen> {
 
 // Terms & Conditions Dialog
 class TermsDialog extends StatelessWidget {
-  const TermsDialog({Key? key}) : super(key: key);
+  const TermsDialog({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -1367,7 +1367,7 @@ class TermsDialog extends StatelessWidget {
 }
 // Privacy Policy Dialog
 class PrivacyDialog extends StatelessWidget {
-  const PrivacyDialog({Key? key}) : super(key: key);
+  const PrivacyDialog({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -1409,7 +1409,7 @@ class PrivacyDialog extends StatelessWidget {
 
 class RegistrationSuccessScreen extends StatelessWidget {
   final String uniqueId;
-  const RegistrationSuccessScreen({Key? key, required this.uniqueId}) : super(key: key);
+  const RegistrationSuccessScreen({super.key, required this.uniqueId});
 
   @override
   Widget build(BuildContext context) {

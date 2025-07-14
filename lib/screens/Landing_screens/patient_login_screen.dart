@@ -4,7 +4,7 @@ import 'package:intel/screens/Patient_screens/patient_dashboard.dart';
 import 'package:intel/services/supabase_service.dart';
 
 class PatientLoginScreen extends StatefulWidget {
-  const PatientLoginScreen({Key? key}) : super(key: key);
+  const PatientLoginScreen({super.key});
 
   @override
   State<PatientLoginScreen> createState() => _PatientLoginScreenState();

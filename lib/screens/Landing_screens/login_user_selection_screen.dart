@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class EnhancedUserSelectionScreen extends StatefulWidget {
-  const EnhancedUserSelectionScreen({Key? key}) : super(key: key);
+  const EnhancedUserSelectionScreen({super.key});
   @override
   State<EnhancedUserSelectionScreen> createState() =>
       _EnhancedUserSelectionScreenState();

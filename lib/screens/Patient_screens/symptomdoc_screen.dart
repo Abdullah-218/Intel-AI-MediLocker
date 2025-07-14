@@ -7,6 +7,8 @@ void main() {
 }
 
 class SymptomAnalyzerApp extends StatelessWidget {
+  const SymptomAnalyzerApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -15,7 +17,7 @@ class SymptomAnalyzerApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
         fontFamily: 'Roboto',
-        cardTheme: CardTheme(
+        cardTheme: CardThemeData(
           elevation: 4,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16),
@@ -48,6 +50,8 @@ class SymptomAnalyzerApp extends StatelessWidget {
 }
 
 class SymptomAnalysisPage extends StatefulWidget {
+  const SymptomAnalysisPage({super.key});
+
   @override
   _SymptomAnalysisPageState createState() => _SymptomAnalysisPageState();
 }

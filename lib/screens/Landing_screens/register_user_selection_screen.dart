@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class CreAccScreen2 extends StatefulWidget {
-  const  CreAccScreen2 ({Key? key}) : super(key: key);
+  const  CreAccScreen2 ({super.key});
 
   @override
   State<CreAccScreen2> createState() =>

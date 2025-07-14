@@ -1037,7 +1037,7 @@ class _DoctorDashboardState extends State<DoctorDashboard> with SingleTickerProv
     );
     });
   }Widget _buildBottomNavigationBar() {
-    int _currentIndex = 0;
+    int currentIndex = 0;
 
     return StatefulBuilder(
       builder: (context, setState) {
@@ -1060,17 +1060,17 @@ class _DoctorDashboardState extends State<DoctorDashboard> with SingleTickerProv
               GestureDetector(
                 onTap: () {
                   setState(() {
-                    _currentIndex = 0;
+                    currentIndex = 0;
                     // Navigate to Home Screen
                     // Example: Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen()));
                   });
                 },
-                child: _buildNavItem(Icons.home_rounded, 'Home', isSelected: _currentIndex == 0),
+                child: _buildNavItem(Icons.home_rounded, 'Home', isSelected: currentIndex == 0),
               ),
               GestureDetector(
                 onTap: () {
                   setState(() {
-                    _currentIndex = 3;
+                    currentIndex = 3;
                   });
                   // Move the navigation outside of setState
                   Navigator.push(
@@ -1078,7 +1078,7 @@ class _DoctorDashboardState extends State<DoctorDashboard> with SingleTickerProv
                       MaterialPageRoute(builder: (context) => const AppointmentsScreen())
                   );
                 },
-                child: _buildNavItem(Icons.calendar_today_rounded, 'Schedule', isSelected: _currentIndex == 1),
+                child: _buildNavItem(Icons.calendar_today_rounded, 'Schedule', isSelected: currentIndex == 1),
               ),
               GestureDetector(
                 onTap: () {
@@ -1120,16 +1120,16 @@ class _DoctorDashboardState extends State<DoctorDashboard> with SingleTickerProv
               GestureDetector(
                 onTap: () {
                   setState(() {
-                    _currentIndex = 3;
+                    currentIndex = 3;
                     Navigator.push(context, MaterialPageRoute(builder: (context) => MessageScreen()));
                   });
                 },
-                child: _buildNavItem(Icons.message_rounded, 'Messages', isSelected: _currentIndex == 3),
+                child: _buildNavItem(Icons.message_rounded, 'Messages', isSelected: currentIndex == 3),
               ),
               GestureDetector(
                 onTap: () {
                   setState(() {
-                    _currentIndex = 3;
+                    currentIndex = 3;
                   });
                   // Move the navigation outside of setState
                   Navigator.push(
@@ -1137,7 +1137,7 @@ class _DoctorDashboardState extends State<DoctorDashboard> with SingleTickerProv
                       MaterialPageRoute(builder: (context) => const DoctorProfileDashboard())
                   );
                 },
-                child: _buildNavItem(Icons.person_rounded, 'Profile', isSelected: _currentIndex == 4),
+                child: _buildNavItem(Icons.person_rounded, 'Profile', isSelected: currentIndex == 4),
               ),
             ],
           ),
@@ -1248,11 +1248,11 @@ class AnimatedWaveBackground extends StatefulWidget {
   final double amplitude;
   final double frequency;
   const AnimatedWaveBackground({
-    Key? key,
+    super.key,
     required this.color,
     required this.amplitude,
     required this.frequency,
-  }) : super(key: key);
+  });
   @override
   _AnimatedWaveBackgroundState createState() => _AnimatedWaveBackgroundState();
 }
@@ -1324,9 +1324,9 @@ class WavePainter extends CustomPainter {
 class PatientStatisticsChart extends StatelessWidget {
   final Color primaryColor;
   const PatientStatisticsChart({
-    Key? key,
+    super.key,
     required this.primaryColor,
-  }) : super(key: key);
+  });
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -1460,9 +1460,9 @@ class PatientStatisticsChart extends StatelessWidget {
 class SimpleLineChart extends StatelessWidget {
   final Color primaryColor;
   const SimpleLineChart({
-    Key? key,
+    super.key,
     required this.primaryColor,
-  }) : super(key: key);
+  });
   @override
   Widget build(BuildContext context) {
     return CustomPaint(

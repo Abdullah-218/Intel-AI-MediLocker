@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 class DietPlanScreen extends StatefulWidget {
-  const DietPlanScreen({Key? key}) : super(key: key);
+  const DietPlanScreen({super.key});
 
   @override
   _DietPlanScreenState createState() => _DietPlanScreenState();
@@ -402,7 +402,7 @@ class _DietPlanScreenState extends State<DietPlanScreen> {
                               const Icon(Icons.check_circle, color: Colors.green),
                               const SizedBox(width: 8),
                               Text(
-                                'Recommended Diet Plan for ${selectedState}',
+                                'Recommended Diet Plan for $selectedState',
                                 style: const TextStyle(
                                   fontSize: 16,
                                   fontWeight: FontWeight.bold,
@@ -479,7 +479,7 @@ class _DietPlanScreenState extends State<DietPlanScreen> {
                   ),
                 ],
               ),
-            )).toList(),
+            )),
           ],
         ),
       ),

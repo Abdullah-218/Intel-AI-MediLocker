@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
 class TelemedicineScreen extends StatefulWidget {
-  const TelemedicineScreen({Key? key}) : super(key: key);
+  const TelemedicineScreen({super.key});
 
   @override
   State<TelemedicineScreen> createState() => _TelemedicineScreenState();
@@ -70,7 +70,7 @@ class _TelemedicineScreenState extends State<TelemedicineScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.background,
+      backgroundColor: Theme.of(context).colorScheme.surface,
       body: SafeArea(
         child: CustomScrollView(
           slivers: [
@@ -108,7 +108,7 @@ class _TelemedicineScreenState extends State<TelemedicineScreen> {
     return SliverAppBar(
       floating: true,
       pinned: false,
-      backgroundColor: Theme.of(context).colorScheme.background,
+      backgroundColor: Theme.of(context).colorScheme.surface,
       elevation: 0,
       leadingWidth: 0,
       titleSpacing: 16,

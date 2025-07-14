@@ -6,6 +6,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -40,7 +42,7 @@ class MessageModel {
 
 // Message Screen
 class MessageScreen extends StatefulWidget {
-  const MessageScreen({Key? key}) : super(key: key);
+  const MessageScreen({super.key});
 
   @override
   _MessageScreenState createState() => _MessageScreenState();
@@ -310,10 +312,10 @@ class DetailedChatScreen extends StatefulWidget {
   final String patientName;
 
   const DetailedChatScreen({
-    Key? key,
+    super.key,
     required this.patientId,
     required this.patientName
-  }) : super(key: key);
+  });
 
   @override
   _DetailedChatScreenState createState() => _DetailedChatScreenState();
@@ -367,11 +369,11 @@ class _DetailedChatScreenState extends State<DetailedChatScreen> {
           children: [
             CircleAvatar(
               backgroundColor: Colors.blue.shade100,
+              radius: 20,
               child: Text(
                 widget.patientName[0].toUpperCase(),
                 style: TextStyle(color: Colors.blue),
               ),
-              radius: 20,
             ),
             SizedBox(width: 10),
             Column(

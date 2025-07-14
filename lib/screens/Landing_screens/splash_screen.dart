@@ -3,7 +3,7 @@ import 'dart:async';
 import 'dart:ui';
 
 class SplashScreen extends StatefulWidget {
-  const SplashScreen({Key? key}) : super(key: key);
+  const SplashScreen({super.key});
 
   @override
   State<SplashScreen> createState() => _SplashScreenState();
@@ -251,7 +251,7 @@ class _SplashScreenState extends State<SplashScreen>
   Widget _buildCustomProgressIndicator() {
     return Column(
       children: [
-        Container(
+        SizedBox(
           width: 50,
           height: 50,
           child: Stack(
@@ -307,7 +307,7 @@ class _SplashScreenState extends State<SplashScreen>
           duration: const Duration(milliseconds: 900),
           builder: (context, value, child) {
             return Text(
-              'Loading' + '.' * (value % 4),
+              'Loading${'.' * (value % 4)}',
               style: const TextStyle(
                 color: Colors.white70,
                 fontSize: 14,

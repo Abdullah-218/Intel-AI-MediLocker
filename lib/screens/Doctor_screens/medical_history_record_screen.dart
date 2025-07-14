@@ -11,11 +11,11 @@ class MedicalHistoryScreen extends StatelessWidget {
   final String patientPhone;
 
   const MedicalHistoryScreen({
-    Key? key,
+    super.key,
     required this.patientName,
     required this.patientEmail,
     required this.patientPhone
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -181,7 +181,7 @@ class MedicalHistoryScreen extends StatelessWidget {
                   child: DataTable(
                     columnSpacing: 20,
                     dataRowHeight: 60,
-                    headingRowColor: MaterialStateProperty.all(Colors.white.withOpacity(0.5)),
+                    headingRowColor: WidgetStateProperty.all(Colors.white.withOpacity(0.5)),
                     columns: [
                       _buildDataColumn('Date'),
                       _buildDataColumn('Doctor'),

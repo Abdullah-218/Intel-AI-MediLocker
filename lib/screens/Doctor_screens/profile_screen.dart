@@ -9,7 +9,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
 }
 
 class DoctorProfileDashboard extends StatefulWidget {
-  const DoctorProfileDashboard({Key? key}) : super(key: key);
+  const DoctorProfileDashboard({super.key});
 
   @override
   _DoctorProfileDashboardState createState() => _DoctorProfileDashboardState();
@@ -52,7 +52,7 @@ class _DoctorProfileDashboardState extends State<DoctorProfileDashboard> with Si
   bool _isEditing = false;
 
   // Doctor profile data - would come from database in a real app
-  Map<String, dynamic> _profileData = {
+  final Map<String, dynamic> _profileData = {
     "name": "Dr. Sarah Johnson",
     "specialization": "Cardiology Specialist",
     "rating": 4.9,

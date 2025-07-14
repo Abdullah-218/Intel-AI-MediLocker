@@ -77,6 +77,8 @@ class MedicineSafetyService {
 
 // Main Application
 class MedicineSafetyApp extends StatelessWidget {
+  const MedicineSafetyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -131,7 +133,7 @@ class MedicineSafetyApp extends StatelessWidget {
           hintStyle: TextStyle(color: AppConstants.textSecondaryColor.withOpacity(0.7)),
           labelStyle: TextStyle(color: AppConstants.textSecondaryColor),
         ),
-        cardTheme: CardTheme(
+        cardTheme: CardThemeData(
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
           elevation: 0,
           color: AppConstants.cardColor,
@@ -144,6 +146,8 @@ class MedicineSafetyApp extends StatelessWidget {
 
 // Main Screen
 class MedicineSafetyCheckScreen extends StatefulWidget {
+  const MedicineSafetyCheckScreen({super.key});
+
   @override
   _MedicineSafetyCheckScreenState createState() => _MedicineSafetyCheckScreenState();
 }

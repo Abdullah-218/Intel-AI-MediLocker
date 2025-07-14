@@ -28,7 +28,7 @@ class Patient {
 }
 
 class AssignedPatientsPage extends StatefulWidget {
-  const AssignedPatientsPage({Key? key}) : super(key: key);
+  const AssignedPatientsPage({super.key});
 
   @override
   State<AssignedPatientsPage> createState() => _AssignedPatientsPageState();
@@ -547,9 +547,9 @@ class OTPVerificationPage extends StatefulWidget {
   final Patient patient;
 
   const OTPVerificationPage({
-    Key? key,
+    super.key,
     required this.patient,
-  }) : super(key: key);
+  });
 
   @override
   State<OTPVerificationPage> createState() => _OTPVerificationPageState();
