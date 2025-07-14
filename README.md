@@ -18,7 +18,7 @@ Unlike traditional healthcare apps that focus only on basic appointment booking 
  ## 🎯 Core Features
 
 ### 🕵🏻‍♀️ Patient Portal
-
+```
 **📄 Medical History Management**
 
 Secure digital storage of past diagnoses, prescriptions, and consultations. Doctors can generate and view PDF prescriptions including dosage timings and patient-doctor details.
@@ -49,11 +49,11 @@ Patients can upload diagnostic reports (PDFs, images). Doctors and patients can 
 **📱 Telemedicine – Secure Video Consultation**
 
 Enables remote consultations via secure video calls within the app.
-
+```
 ---
 
 ### 👨🏻‍⚕️ Doctor Portal
-
+```
 **📑 OTP-Verified Patient Medical History Access**
 
 Doctors must verify patient identity via OTP before viewing sensitive medical history.
@@ -73,11 +73,11 @@ Doctors can manage both online-scheduled and offline walk-in patients from a uni
 **📈 Patient Statistics & Appointment Tracking**
 
 Doctors get a dashboard showing patient analytics: number of patients, common symptoms, and upcoming appointments.
-
+```
 ---
 
 ### 👨🏻‍💼 Admin Panel
-
+```
 **🪪 Doctor Verification (Manual License Check)**
 
 Admins verify doctors manually via license checks on external government portals before approval.
@@ -85,7 +85,7 @@ Admins verify doctors manually via license checks on external government portals
 **🔐 Secure Admin Control**
 
 Only verified doctors are granted access to the app’s medical functionalities, ensuring system integrity and trust.
-
+```
 ---
 
 ## 🛠️ Built With
