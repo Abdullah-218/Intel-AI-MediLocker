@@ -130,10 +130,14 @@ Only verified doctors are granted access to the app’s medical functionalities,
 	•	📊 Real-time Health Analytics Dashboard.
 	•	🩺 Smart Wearable Integration for Health Monitoring.
 
-##📥 Installation & Setup
+## 📥 Installation & Setup
+
 	1.	Clone the repository.
+ 
 	2.	Set up Supabase project and configure supabase_config.dart.
+ 
 	3.	Run Flutter project:
+ 
  ```
 flutter pub get
 flutter run
