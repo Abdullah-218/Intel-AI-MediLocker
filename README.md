@@ -121,7 +121,7 @@ Only verified doctors are granted access to the app’s medical functionalities,
 
 -> 🧑‍💻 Led as Backend & AI Lead + Team Leader for full-stack development.
 
-⸻
+---
 
 ## 📈 Future Scope
 
@@ -146,5 +146,9 @@ flutter run
 ## 📣 Contribution
 
 Pull requests are welcome! For major changes, please open an issue first to discuss proposed modifications.
+
+
+
+
 
  
